@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <title>Sentiment Analyzer</title>
+</head>
+
+<body>
+    <h1>Welcome to Sentiment Analyzer of Reviews</h1>
+    <form action="/prediction" method="post">
+        <label for="text">Enter your Review:</label>
+        <input type="text" name="input_text" placeholder="Type here....">
+        <input type="submit" value="Predict">
+    </form>
+</body>
+
+</html>
